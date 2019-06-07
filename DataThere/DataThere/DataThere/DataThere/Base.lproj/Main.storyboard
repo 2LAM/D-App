@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Whb-Ub-mnA">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="UZY-zg-Wcb">
+            <objects>
+                <navigationController id="4JK-4V-jMt" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="No3-32-8P8">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="psd-fr-YOi" kind="relationship" relationship="rootViewController" id="Mvv-35-BEW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iNR-SQ-wBc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-641" y="90"/>
+        </scene>
+        <!--weatherViewController-->
+        <scene sceneID="tjf-TL-JpB">
+            <objects>
+                <tableViewController id="psd-fr-YOi" userLabel="weatherViewController" customClass="WeatherViewController" customModule="DataThere" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="V8b-GZ-NjJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="weatherCell" textLabel="U6F-9j-4IW" style="IBUITableViewCellStyleDefault" id="8cE-2Q-BEJ">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8cE-2Q-BEJ" id="OZz-Qz-Zd6">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="U6F-9j-4IW">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration" identifier="weatherCell"/>
+                                <connections>
+                                    <segue destination="60M-Sc-Dw6" kind="show" id="7lc-Gu-483"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="psd-fr-YOi" id="EPz-VK-SpU"/>
+                            <outlet property="delegate" destination="psd-fr-YOi" id="cZe-oF-c3H"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Cities" id="Nzr-1z-hUe">
+                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="pd6-al-Nlq">
+                            <connections>
+                                <segue destination="gPN-SU-BFq" kind="show" id="yuC-Ls-om4"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="oIY-ah-nxJ">
+                            <connections>
+                                <action selector="done:" destination="psd-fr-YOi" id="OCI-IL-dkB"/>
+                                <segue destination="60M-Sc-Dw6" kind="show" id="j6U-mc-ltG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1pV-ba-oLy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="246" y="90"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yDK-Oa-YaM">
+            <objects>
+                <navigationController id="2zB-2Z-3wf" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6FK-t0-6yp">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gPN-SU-BFq" kind="relationship" relationship="rootViewController" id="9DL-uC-lej"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mCU-45-cvI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="983" y="90"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mqX-7K-Cbu">
+            <objects>
+                <navigationController id="Whb-Ub-mnA" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5Bd-xL-rIF">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="60M-Sc-Dw6" kind="relationship" relationship="rootViewController" id="EZA-Lc-636"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EyQ-h9-2Mq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-610" y="836"/>
+        </scene>
+        <!--City-->
+        <scene sceneID="pyt-SB-MbC">
+            <objects>
+                <viewController id="60M-Sc-Dw6" customClass="CurrentWeatherViewController" customModule="DataThere" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vnk-rK-Ma8" userLabel="High">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L2O-80-Dnb">
+                                <rect key="frame" x="99" y="88" width="177" height="177"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Temperature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OqB-p9-XEH" userLabel="Current">
+                                <rect key="frame" x="138" y="273" width="98" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" hint="Temperature" label="Current"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7RN-SV-siI">
+                                <rect key="frame" x="16" y="342" width="343" height="436"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="forecastCell" id="KAk-MP-chk" customClass="ForecastTableViewCell" customModule="DataThere" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KAk-MP-chk" id="Ehl-1m-5XO">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wv-p7-OGq">
+                                                    <rect key="frame" x="15" y="11" width="92" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="timeLabel"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDo-3u-ms1">
+                                                    <rect key="frame" x="301" y="11" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="rowTempLabel"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CzP-JN-1Tq">
+                                                    <rect key="frame" x="156" y="6" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="forecastImage"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="forecastImage" destination="CzP-JN-1Tq" id="nW9-yL-BHb"/>
+                                            <outlet property="tempLabel" destination="lDo-3u-ms1" id="cf7-N4-OhP"/>
+                                            <outlet property="timeLabel" destination="8wv-p7-OGq" id="dLe-U4-qil"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcW-4G-seV">
+                                <rect key="frame" x="16" y="302" width="343" height="32"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="currentTempLabel"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration" label="High"/>
+                        <viewLayoutGuide key="safeArea" id="BDD-3G-Bru"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="City" id="PsP-gV-sdD">
+                        <barButtonItem key="leftBarButtonItem" title="Cities" id="5yG-wF-txA">
+                            <connections>
+                                <segue destination="psd-fr-YOi" kind="show" id="3tS-Ud-N6Y"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Details" id="HPQ-c2-mQP">
+                            <connections>
+                                <segue destination="3Fe-ZF-tZ7" kind="show" id="Bgg-f3-bWT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="currentTempLabel" destination="gcW-4G-seV" id="amw-yQ-W6V"/>
+                        <outlet property="forecastTableView" destination="7RN-SV-siI" id="Ihc-fD-res"/>
+                        <outlet property="weatherImage" destination="L2O-80-Dnb" id="tma-l0-Sl4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LiD-qK-OQr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="165.59999999999999" y="835.71428571428578"/>
+        </scene>
+        <!--Details-->
+        <scene sceneID="bmv-s0-g7h">
+            <objects>
+                <viewController id="3Fe-ZF-tZ7" customClass="WeatherDetailViewController" customModule="DataThere" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Djr-HF-VIE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="712-l6-ovE">
+                                <rect key="frame" x="16" y="91" width="343" height="687"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="nXk-hl-Jwm"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Details" id="p7A-5P-dTV">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="v1Z-Vw-cQw">
+                            <connections>
+                                <action selector="done:" destination="dNy-ov-WUw" id="Pch-xm-SOn"/>
+                                <segue destination="dNy-ov-WUw" kind="unwind" unwindAction="done:" id="DqF-61-J1Z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="backButton" destination="v1Z-Vw-cQw" id="Emw-fz-Rry"/>
+                        <outlet property="weatherDetailsTextView" destination="712-l6-ovE" id="yGa-t1-O4K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ubr-sy-Fa8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="dNy-ov-WUw" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1188" y="841.62561576354688"/>
+        </scene>
+        <!--Search Cities-->
+        <scene sceneID="jdQ-sT-fKY">
+            <objects>
+                <tableViewController id="gPN-SU-BFq" customClass="CitySearchViewController" customModule="DataThere" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="e7r-GQ-iNP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cityCell" id="q9M-mP-b2L">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="q9M-mP-b2L" id="lVH-Fe-VjE">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration" identifier="cityCell"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="gPN-SU-BFq" id="7PY-Hq-7UI"/>
+                            <outlet property="delegate" destination="gPN-SU-BFq" id="kS4-Wi-tr0"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Search Cities" id="hyf-sT-OCm">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="Gf4-Ud-3se">
+                            <connections>
+                                <segue destination="psd-fr-YOi" kind="show" identifier="none" id="Kdk-pW-FKR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cityTableView" destination="e7r-GQ-iNP" id="djw-uK-1Jn"/>
+                        <outlet property="searchDisplayController" destination="Y5k-UO-AND" id="5Ei-ya-yS0"/>
+                        <segue destination="psd-fr-YOi" kind="show" identifier="searchDoneSegue" id="4IH-mX-PLq"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E7f-Yx-qqc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="Y5k-UO-AND">
+                    <connections>
+                        <outlet property="delegate" destination="gPN-SU-BFq" id="1zq-Yl-QGc"/>
+                        <outlet property="searchContentsController" destination="gPN-SU-BFq" id="hG5-rO-yxl"/>
+                        <outlet property="searchResultsDataSource" destination="gPN-SU-BFq" id="KIi-Hn-XDu"/>
+                        <outlet property="searchResultsDelegate" destination="gPN-SU-BFq" id="5Zw-5u-BIA"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="1754" y="90"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="9DL-uC-lej"/>
+        <segue reference="j6U-mc-ltG"/>
+        <segue reference="3tS-Ud-N6Y"/>
+    </inferredMetricsTieBreakers>
+</document>

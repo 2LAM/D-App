@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		DataThere::DataTherePackageTests::ProductTarget /* DataTherePackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_33 /* Build configuration list for PBXAggregateTarget "DataTherePackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_36 /* PBXTargetDependency */,
+			);
+			name = DataTherePackageTests;
+			productName = DataTherePackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		B5C7550AE3C8E13204BAA148 /* Pods_DataThere.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D4BE0E4B6CB8B75F2BE71F /* Pods_DataThere.framework */; };
+		OBJ_24 /* DataThere.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* DataThere.swift */; };
+		OBJ_31 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_42 /* DataThereTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* DataThereTests.swift */; };
+		OBJ_43 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* XCTestManifests.swift */; };
+		OBJ_45 /* DataThere.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DataThere::DataThere::Product /* DataThere.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		90D4BE0E4B6CB8B75F2BE71F /* Pods_DataThere.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataThere.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		973461EF6481F6EA8DE7535C /* Pods-DataThere.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataThere.debug.xcconfig"; path = "Target Support Files/Pods-DataThere/Pods-DataThere.debug.xcconfig"; sourceTree = "<group>"; };
+		A897FCCF7687D6F0A8141E2F /* Pods-DataThere.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataThere.release.xcconfig"; path = "Target Support Files/Pods-DataThere/Pods-DataThere.release.xcconfig"; sourceTree = "<group>"; };
+		DataThere::DataThere::Product /* DataThere.framework */ = {isa = PBXFileReference; path = DataThere.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DataThere::DataThereTests::Product /* DataThereTests.xctest */ = {isa = PBXFileReference; path = DataThereTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_12 /* DataThereTests.swift */ = {isa = PBXFileReference; path = DataThereTests.swift; sourceTree = "<group>"; };
+		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		OBJ_17 /* DataThereTests */ = {isa = PBXFileReference; path = DataThereTests; sourceTree = SOURCE_ROOT; };
+		OBJ_18 /* DataThere */ = {isa = PBXFileReference; path = DataThere; sourceTree = SOURCE_ROOT; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* DataThere.swift */ = {isa = PBXFileReference; path = DataThere.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EFBC5381D23BDA5D083B74F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				B5C7550AE3C8E13204BAA148 /* Pods_DataThere.framework in Frameworks */,
+			);
+		};
+		OBJ_44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				OBJ_45 /* DataThere.framework in Frameworks */,
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AD95692554D2C8740DC8E54 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				973461EF6481F6EA8DE7535C /* Pods-DataThere.debug.xcconfig */,
+				A897FCCF7687D6F0A8141E2F /* Pods-DataThere.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		55FB26DDDE701C2EE192E9B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90D4BE0E4B6CB8B75F2BE71F /* Pods_DataThere.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		OBJ_10 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_11 /* DataThereTests */,
+			);
+			name = Tests;
+			path = "";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_11 /* DataThereTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_12 /* DataThereTests.swift */,
+				OBJ_13 /* XCTestManifests.swift */,
+			);
+			name = DataThereTests;
+			path = Tests/DataThereTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DataThere::DataThere::Product /* DataThere.framework */,
+				DataThere::DataThereTests::Product /* DataThereTests.xctest */,
+			);
+			name = Products;
+			path = "";
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_10 /* Tests */,
+				OBJ_14 /* Products */,
+				OBJ_17 /* DataThereTests */,
+				OBJ_18 /* DataThere */,
+				0AD95692554D2C8740DC8E54 /* Pods */,
+				55FB26DDDE701C2EE192E9B5 /* Frameworks */,
+			);
+			path = "";
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* DataThere */,
+			);
+			name = Sources;
+			path = "";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* DataThere */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* DataThere.swift */,
+			);
+			name = DataThere;
+			path = Sources/DataThere;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DataThere::DataThere /* DataThere */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_20 /* Build configuration list for PBXNativeTarget "DataThere" */;
+			buildPhases = (
+				E07FA7AD9F1F9B62A9B62F49 /* [CP] Check Pods Manifest.lock */,
+				OBJ_23 /* Sources */,
+				OBJ_25 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DataThere;
+			productName = DataThere;
+			productReference = DataThere::DataThere::Product /* DataThere.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DataThere::DataThereTests /* DataThereTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_38 /* Build configuration list for PBXNativeTarget "DataThereTests" */;
+			buildPhases = (
+				OBJ_41 /* Sources */,
+				OBJ_44 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_46 /* PBXTargetDependency */,
+			);
+			name = DataThereTests;
+			productName = DataThereTests;
+			productReference = DataThere::DataThereTests::Product /* DataThereTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DataThere::SwiftPMPackageDescription /* DataTherePackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_27 /* Build configuration list for PBXNativeTarget "DataTherePackageDescription" */;
+			buildPhases = (
+				OBJ_30 /* Sources */,
+				2EFBC5381D23BDA5D083B74F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DataTherePackageDescription;
+			productName = DataTherePackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "DataThere" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5;
+			productRefGroup = OBJ_14 /* Products */;
+			projectDirPath = .;
+			targets = (
+				DataThere::DataThere /* DataThere */,
+				DataThere::SwiftPMPackageDescription /* DataTherePackageDescription */,
+				DataThere::DataTherePackageTests::ProductTarget /* DataTherePackageTests */,
+				DataThere::DataThereTests /* DataThereTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E07FA7AD9F1F9B62A9B62F49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DataThere-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				OBJ_24 /* DataThere.swift in Sources */,
+			);
+		};
+		OBJ_30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				OBJ_31 /* Package.swift in Sources */,
+			);
+		};
+		OBJ_41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				OBJ_42 /* DataThereTests.swift in Sources */,
+				OBJ_43 /* XCTestManifests.swift in Sources */,
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DataThere::DataThereTests /* DataThereTests */;
+		};
+		OBJ_46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DataThere::DataThere /* DataThere */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 973461EF6481F6EA8DE7535C /* Pods-DataThere.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = DataThere.xcodeproj/DataThere_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = DataThere;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = DataThere;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A897FCCF7687D6F0A8141E2F /* Pods-DataThere.release.xcconfig */;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = DataThere.xcodeproj/DataThere_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = DataThere;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = DataThere;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = DataThere.xcodeproj/DataThereTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = DataThereTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = DataThere.xcodeproj/DataThereTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = DataThereTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_2 /* Build configuration list for PBXProject "DataThere" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_20 /* Build configuration list for PBXNativeTarget "DataThere" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_21 /* Debug */,
+				OBJ_22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_27 /* Build configuration list for PBXNativeTarget "DataTherePackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_28 /* Debug */,
+				OBJ_29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_33 /* Build configuration list for PBXAggregateTarget "DataTherePackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_34 /* Debug */,
+				OBJ_35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_38 /* Build configuration list for PBXNativeTarget "DataThereTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_39 /* Debug */,
+				OBJ_40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
